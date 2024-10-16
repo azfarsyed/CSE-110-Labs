@@ -22,6 +22,7 @@ export function ClickCounter() {
        background: theme.background,
        color: theme.foreground,
        padding: "20px",
+       
      }}
    >
      <p>You clicked {count} times </p>
@@ -99,4 +100,4 @@ export function FavoriteList({notes}: {notes: Note[]} ) {
         </div>
     ); 
 }
-//export default favorites;
+
