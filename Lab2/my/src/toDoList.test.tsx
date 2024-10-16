@@ -39,20 +39,4 @@ describe("ToDoList component", () => {
 
     expect(screen.getByText("Items bought: 1")).toBeInTheDocument();
   });
-
-//   test("preserves checked state when multiple items are checked", () => {
-//     render(<ToDoList />);
-
-//     const firstCheckbox = screen.getByRole("checkbox", {
-//       name: dummyGroceryList[0].name,
-//     });
-//     const secondCheckbox = screen.getByRole("checkbox", {
-//       name: dummyGroceryList[1].name,
-//     });
-//     fireEvent.click(firstCheckbox);
-//     fireEvent.click(secondCheckbox);
-
-//     expect(firstCheckbox).toBeChecked();
-//     expect(secondCheckbox).toBeChecked();
-//   });
 });
