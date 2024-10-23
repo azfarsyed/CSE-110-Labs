@@ -96,15 +96,6 @@ export const StickyNotes = () => {
                 {note.favorite ? <FaHeart color = "red" /> : <FaHeart/>}
                 </button> 
             </div>
-            {/* <blockquote contentEditable = "true"> 
-                <h2> {note.title} </h2>
-            </blockquote>
-            <blockquote contentEditable = "true"> 
-                <p> {note.content} </p>
-            </blockquote>
-            <blockquote contentEditable = "true"> 
-            <p> {note.label} </p>
-            </blockquote> */}
             <blockquote 
                 contentEditable={true} 
                 data-testid={`editable-title-${note.id}`}

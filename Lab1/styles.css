@@ -1,16 +1,16 @@
 .navbar {
   position: sticky;
   top: 0;
-  padding: 10px; 
+  padding: 2px; 
   max-width: 420px;
 }
 
 .navbar ul { 
   list-style-type: none;
   margin: 1px;
-  padding: 2px; 
+  padding: 1px; 
   overflow: hidden; 
-  background-color: lightsteelblue;
+  background-color: white;
   font-size: 28px; 
 }
 
@@ -20,14 +20,18 @@
 
 .navbar li a { 
   display: block; 
-  color:white; 
+  color:black; 
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  margin: 0px 2px;
 }
 
 .navbar ul li a:hover {
+  background-color: #182b49;
+  color: #fff;
+}
+
+.navbar ul li a:focus {
   background-color: #182b49;
   color: #fff;
 }
@@ -60,13 +64,32 @@
   gap: 25px;
   grid-auto-rows: minmax(100px, auto);
   background-color: rgb(245,240,230); 
-  text-decoration-color: white;  
-  overflow: scroll; 
+  text-decoration-color: white;   
 }
 
-.wrapper div { 
+.grid { 
   background-color: #182b49; 
   color: white; 
-  display: flex;
-  max-height: 500px; 
+  display: flex; 
+  max-height: 300px; 
+  overflow: auto; 
+}
+
+@media screen and (max-width: 800px) {
+  .navbar ul {
+    display: none; 
+  }
+  .logo { 
+    max-width: 75%;
+    height: auto;
+  }
+  h3 { 
+    font-size: 24px
+  }
+  p { 
+    font-size: 20px;
+  }
+  .wrapper { 
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

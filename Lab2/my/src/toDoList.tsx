@@ -50,7 +50,7 @@ export function ToDoList() {
 function ListItem(item: GroceryItem, changeHandler: ChangeEventHandler) {
  return (
    <div>
-        <label> 
+    <label> 
         <input
         type="checkbox"
         onChange={changeHandler}
