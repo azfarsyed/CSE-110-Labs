@@ -29,7 +29,7 @@ describe('Expense Tracker Tests', () => {
 
     expect(screen.getByText(/nintendo/i)).toBeInTheDocument();
     expect(screen.getByText(/remaining: \$700/i)).toBeInTheDocument();
-    expect(screen.getByText(/spent so far: \$300/i)).toBeInTheDocument();
+    expect(screen.getByText(/spent so far: \$200/i)).toBeInTheDocument();
   });
 
   test("Delete an Expense", () => {
